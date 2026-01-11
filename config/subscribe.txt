@@ -1,9 +1,10 @@
 # 这是订阅源列表，每行一个订阅地址
 # This is a list of subscription sources, with one subscription address per line
 
-https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8
-https://raw.githubusercontent.com/gitgordon85/IPTV-Check/993791b49c05bc0a749b3a1502958027f78452fd/config/866-898-9898
-
+#https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8
+#https://raw.githubusercontent.com/gitgordon85/IPTV-Check/993791b49c05bc0a749b3a1502958027f78452fd/config/866-898-9898
+#https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E7%A6%8F%E5%BB%BA%E7%A7%BB%E5%8A%A8.m3u
+https://raw.githubusercontent.com/kimwang1978/collect-txt/refs/heads/main/assets/freetv/freetv_output.txt
 
 
 [WHITELIST]
