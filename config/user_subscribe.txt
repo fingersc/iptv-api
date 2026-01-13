@@ -1,0 +1,12 @@
+# 这是订阅源列表，每行一个订阅地址
+# This is a list of subscription sources, with one subscription address per line
+
+https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8
+#https://raw.githubusercontent.com/gitgordon85/IPTV-Check/993791b49c05bc0a749b3a1502958027f78452fd/config/866-898-9898
+#https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E7%A6%8F%E5%BB%BA%E7%A7%BB%E5%8A%A8.m3u
+#https://raw.githubusercontent.com/alantang1977/IPTV-CCSH/refs/heads/main/live.m3u
+
+
+[WHITELIST]
+# 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
+# This is the whitelist for subscription sources. Subscription sources in the whitelist will not participate in speed testing and will always be retained at the front of the results.
