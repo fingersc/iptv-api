@@ -1,6 +1,7 @@
 | 配置项                    | 描述                                                                                                                   | 默认值                                      |
 |:-----------------------|:---------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
 | open_update            | 开启更新，用于控制是否更新接口，若关闭则所有工作模式（获取接口和测速）均停止                                                                               | True                                     |
+| open_unmatch_category  | 开启未匹配频道分类，未匹配 source_file 的频道会进入该分类并直接写入结果，不参与测速                                                                     | False                                    |
 | open_empty_category    | 开启无结果频道分类，自动归类至底部                                                                                                    | False                                    |
 | open_update_time       | 开启显示更新时间                                                                                                             | True                                     |
 | open_url_info          | 开启显示接口说明信息，用于控制是否显示接口来源、分辨率、协议类型等信息，为 $ 符号后的内容，播放软件使用该信息对接口进行描述，若部分播放器（如 PotPlayer）不支持解析导致无法播放可关闭                    | False                                    |
@@ -25,6 +26,7 @@
 | http_proxy             | HTTP 代理地址，用于获取订阅源等网络请求                                                                                               |                                          |
 | open_local             | 开启本地源功能，将使用模板文件与本地源文件（local.txt）中的数据                                                                                 | True                                     |
 | open_subscribe         | 开启订阅源功能                                                                                                              | True                                     |
+| open_auto_disable_source | 开启自动停用失效地址，当请求重试后失败、内容为空或没有匹配到符合条件的值时，会自动在 `config/subscribe.txt` 和 `config/epg.txt` 中对应地址前添加 # 进行停用 | True                                     |
 | open_history           | 开启使用历史更新结果（包含模板与结果文件的接口），合并至本次更新中                                                                                    | True                                     |
 | open_headers           | 开启使用 M3U 内含的请求头验证信息，用于测速等操作，注意：只有个别播放器支持播放这类含验证信息的接口，默认为关闭                                                           | False                                    |
 | open_speed_test        | 开启测速功能，获取响应时间、速率、分辨率                                                                                                 | True                                     |
@@ -50,8 +52,9 @@
 | subscribe_num          | 结果中偏好的订阅源接口数量                                                                                                        | 10                                       |
 | logo_url               | 频道台标库地址                                                                                                              |                                          |
 | logo_type              | 频道台标文件类型                                                                                                             | png                                      |
-| open_rtmp              | 开启 RTMP 推流功能，需要安装 FFmpeg，利用本地带宽提升接口播放体验                                                                              | True                                     |
+| open_rtmp              | 开启 RTMP 推流功能，仅建议用于自有或已授权内容，需要安装 FFmpeg，利用本地带宽提升接口播放体验                                                                    | True                                     |
 | nginx_http_port        | Nginx HTTP 服务端口，用于 RTMP 推流转发的 HTTP 服务端口                                                                              | 8080                                     |
 | nginx_rtmp_port        | Nginx RTMP 服务端口，用于 RTMP 推流转发的 RTMP 服务端口                                                                              | 1935                                     |
 | rtmp_idle_timeout      | RTMP 频道接口空闲停止推流超时时长，单位秒(s)，用于控制接口无人观看时超过该时长后停止推流，调整此值能优化服务器资源占用                                                      | 300                                      |
 | rtmp_max_streams       | RTMP 推流最大并发数量，用于控制同时推流的频道数量，数值越大服务器压力越大，调整此值能优化服务器资源占用                                                               | 10                                       |
+| rtmp_transcode_mode    | 推流转码模式，copy 则不进行转码，以复制方式输出，可以最大程度节省CPU消耗，auto 则自适应匹配播放器进行转码，会增加CPU消耗但能提升兼容性                                          | copy                                     |

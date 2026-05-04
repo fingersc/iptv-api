@@ -312,6 +312,10 @@ class ConfigManager:
         return self.config.getint("Settings", "rtmp_max_streams", fallback=10)
 
     @property
+    def rtmp_transcode_mode(self):
+        return (self.config.get("Settings", "rtmp_transcode_mode", fallback="copy") or "copy").lower()
+
+    @property
     def public_scheme(self):
         return self.config.get("Settings", "public_scheme", fallback="http") or "http"
 
@@ -372,6 +376,14 @@ class ConfigManager:
                 except ValueError:
                     pass
         return mapping
+
+    @property
+    def open_unmatch_category(self):
+        return self.config.getboolean("Settings", "open_unmatch_category", fallback=False)
+
+    @property
+    def open_auto_disable_source(self):
+        return self.config.getboolean("Settings", "open_auto_disable_source", fallback=True)
 
     def load(self):
         """

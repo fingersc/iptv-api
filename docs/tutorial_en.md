@@ -379,7 +379,7 @@ generated result files directly on the host. Append the following options to the
 | /log/result     | Log of valid results                            |
 | /log/speed-test | Log of all interfaces involved in speed testing |
 | /log/statistic  | Log of statistics results                       |
-| /log/nomatch    | Log of unmatched channels                       |
+| /log/unmatch    | Log of unmatched channels                       |
 
 **RTMP Streaming:**
 
@@ -387,9 +387,13 @@ generated result files directly on the host. Append the following options to the
 > 1. If deploying on a server, be sure to set the `PUBLIC_DOMAIN` environment variable to the server's domain name or IP
      address and the `PUBLIC_PORT` environment variable to the public port; otherwise the streaming addresses will not
      be accessible.
-> 2. When streaming is enabled, obtained interfaces (e.g., subscription sources) will be streamed by default.
+> 2. When streaming is enabled, obtained interfaces (e.g., subscription sources) will be streamed by default; only use
+     this for content you own, are explicitly authorized to redistribute, or need for closed/internal testing.
 > 3. To stream local video sources, create an `hls` folder under the `config` directory and place video files named
      after the channel; the program will automatically stream them to the corresponding channels.
+> 4. When using this project in Mainland China, make sure the content authorization, copyright, network-audiovisual,
+     and broadcasting-related compliance requirements are satisfied. Do not use it to distribute, relay, or publicly
+     expose unauthorized live streams or program sources.
 
 | Streaming Endpoint | Description                          |
 |:-------------------|:-------------------------------------|
@@ -403,3 +407,123 @@ generated result files directly on the host. Append the following options to the
 | /hls/ipv6/txt      | hls ipv6 txt streaming endpoint      |
 | /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint      |
 | /stat              | Streaming status statistics endpoint |
+
+##### Streaming Usage Tutorial
+
+Docker enables streaming with minimal configuration and placing local video files in the right folder. Below are two
+common streaming scenarios: subscription (online) sources and local video files. Use this only for content you are
+authorized to relay or for closed/internal technical testing.
+
+1) Preparations before start (example: Docker Compose)
+
+- Use the repository's `docker-compose.yml` and confirm the following environment variables before starting:
+    - `PUBLIC_DOMAIN`: public domain or public IP used in stream Host headers.
+    - `PUBLIC_PORT`: public port mapped on the host (affects final access addresses).
+    - `NGINX_HTTP_PORT`: container internal HTTP port (normally keep default).
+- Make sure the `config` directory is mounted into the container (default `/iptv-api/config`) so you can edit templates,
+  add local videos, and place subscription files on the host.
+
+Example (excerpt from compose for reference):
+
+```yml
+services:
+  iptv-api:
+    image: guovern/iptv-api:latest
+    container_name: iptv-api
+    restart: unless-stopped
+
+    ports:
+      - "80:8080" # host_port:container_http_port
+
+    volumes:
+      - /iptv-api/config:/iptv-api/config # Change to host configuration folder path:container configuration folder path
+      - /iptv-api/output:/iptv-api/output
+
+    environment:
+      PUBLIC_SCHEME: "http"
+      PUBLIC_DOMAIN: "192.168.1.95" # Change to your server domain or IP address. Here it uses my LAN IP as an example.
+      PUBLIC_PORT: "80" # Change to public port
+      NGINX_HTTP_PORT: "8080" # Default HTTP service port inside the container
+      CDN_URL: ""
+      HTTP_PROXY: ""
+```
+
+2) Subscription source streaming (online sources)
+
+- Add subscription URLs (txt or m3u) to `config/subscribe.txt`. On startup the program will read the subscriptions and
+  publish streams for the channels found.
+- Streaming endpoints to view streamed channels:
+    - `/hls/txt`, `/hls/m3u` (and their ipv4/ipv6 variants)
+
+3) Local video streaming (server video files)
+
+- Create an `hls` folder under the mounted `config` directory (for example `/iptv-api/config/hls` on the host).
+- Put video files named exactly as the channel titles used in your template (e.g., `海洋.mp4`). The program will
+  automatically stream the corresponding file for that channel.
+
+Example layout:
+
+```
+iptv-api/
+├── config
+│   └── hls
+│       └── 海洋.mp4
+```
+
+- Add the channel in `config/demo.txt` (or your template) as usual; the program will map the local file to the channel
+  and stream it.
+
+Example template fragment:
+
+```markdown
+📺Main channels,#genre#
+CCTV-1
+
+📡Satellite,#genre#
+Guangdong Satellite
+
+🚀Local video,#genre#
+海洋
+```
+
+4) Start and verify
+
+- Start the service (example using Compose):
+
+```bash
+docker compose up -d
+```
+
+- Verify:
+    - Check startup logs for successful initialization.
+    - View streaming results (txt): visit `/hls/txt` to see current stream addresses and descriptions.
+    - Use `/hls/m3u` to load the playlist into a player or `/hls/txt` for a plain list.
+
+5) Monitoring and logs
+
+- Use the `/stat` endpoint to see current streaming counts, traffic, and basic statistics.
+- Container logs provide detailed stream start/stop messages:
+    - Logs show when a channel starts streaming and when idle channels stop.
+
+6) Common tips and tuning
+
+- Public access & firewall: Make sure `PUBLIC_PORT` is open to the outside (firewall, cloud security groups, etc.).
+  RTMP/HTTP ports must be accessible externally.
+- Domain and certificates: If using a domain with HTTPS, set `PUBLIC_DOMAIN` to your domain and `PUBLIC_SCHEME` to
+  `https`. Manage TLS/HTTPS via an external reverse proxy or your hosting setup.
+- Performance & concurrency: Local streaming consumes CPU and bandwidth. Adjust `rtmp_max_streams` to limit concurrent
+  streams and avoid overloading the server.
+- Idle stop: `rtmp_idle_timeout` controls how long a stream stays active with no viewers (in seconds); tune it per your
+  needs.
+
+7) Useful RTMP-related configuration options
+
+```ini
+# RTMP channel idle stop timeout (seconds)
+rtmp_idle_timeout = 300
+# Maximum concurrent RTMP streams to avoid excessive server load
+rtmp_max_streams = 10
+```
+
+Above is a compact guide to using streaming. Adjust configuration and verify using `/hls/*` and `/stat` endpoints to
+confirm streaming availability and status.

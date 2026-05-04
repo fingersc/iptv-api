@@ -2,12 +2,12 @@ import asyncio
 import copy
 from collections import defaultdict
 from logging import INFO
-from typing import Any, Dict, Optional, Set, Tuple
+from typing import Any, Dict, Optional, Set, Tuple, Callable, cast
 
 import utils.constants as constants
 from utils.channel import sort_channel_result, generate_channel_statistic, write_channel_to_file, retain_origin
 from utils.config import config
-from utils.tools import get_logger
+from utils.tools import get_logger, close_logger_handlers
 
 
 class ResultAggregator:
@@ -23,7 +23,6 @@ class ResultAggregator:
             write_interval: float = 5.0,
             min_items_before_flush: int = config.urls_limit,
             flush_debounce: Optional[float] = None,
-            sort_logger=None,
             stat_logger=None,
             result: Optional[Dict[str, Dict[str, list]]] = None,
     ):
@@ -42,7 +41,6 @@ class ResultAggregator:
         self.write_interval = write_interval
         self.first_channel_name = first_channel_name
         self.ipv6_support = ipv6_support
-        self.sort_logger = sort_logger or get_logger(constants.result_log_path, level=INFO, init=True)
         self.stat_logger = stat_logger or get_logger(constants.statistic_log_path, level=INFO, init=True)
         self.is_last = False
         self._lock = asyncio.Lock()
@@ -62,7 +60,8 @@ class ResultAggregator:
                 self._debounce_task = loop.create_task(self._debounce_loop())
             except Exception:
                 try:
-                    loop.call_soon_threadsafe(self._create_debounce_task_threadsafe)
+                    cast(Any, loop).call_soon_threadsafe(
+                        cast(Callable[[], None], self._create_debounce_task_threadsafe), *())
                 except Exception:
                     pass
 
@@ -73,39 +72,38 @@ class ResultAggregator:
         """
         self._debounce_task = asyncio.create_task(self._debounce_loop())
 
-    def add_item(self, cate: str, name: str, item: dict, is_channel_last: bool = False, is_last: bool = False):
+    def add_item(self, cate: str, name: str, item: dict, is_channel_last: bool = False, is_last: bool = False,
+                 is_valid: bool = True):
         """
         Add a test result item for a specific category and name.
         """
         self.test_results[cate][name].append(item)
-        self._dirty = True
-        self._dirty_count += 1
         self.is_last = is_last
         self._pending_channels.add((cate, name))
 
         if is_channel_last:
-            self._finished_channels.add((cate, name))
-
-        if is_channel_last:
             try:
+                self._finished_channels.add((cate, name))
                 generate_channel_statistic(self.stat_logger, cate, name, self.test_results[cate][name])
             except Exception:
                 pass
 
-        if self.realtime_write:
+        if is_valid and self.realtime_write:
             try:
+                self._dirty = True
+                self._dirty_count += 1
                 loop = asyncio.get_running_loop()
                 self._ensure_debounce_task_in_loop(loop)
                 if self._dirty_count >= self._min_items_before_flush:
                     self._dirty_count = 0
-                    loop.call_soon(self._flush_event.set)
+                    cast(Any, loop).call_soon(cast(Callable[[], None], self._flush_event.set), *())
             except RuntimeError:
                 try:
                     loop = asyncio.get_event_loop()
                     self._ensure_debounce_task_in_loop(loop)
                     if self._dirty_count >= self._min_items_before_flush:
                         self._dirty_count = 0
-                        loop.call_soon_threadsafe(self._flush_event.set)
+                        cast(Any, loop).call_soon_threadsafe(cast(Callable[[], None], self._flush_event.set), *())
                 except Exception:
                     pass
 
@@ -223,14 +221,22 @@ class ResultAggregator:
         async with self._lock:
             if not self._dirty and not force:
                 return
-            test_copy = copy.deepcopy(self.test_results)
+
             pending = set(self._pending_channels)
             self._pending_channels.clear()
 
             if force:
+                test_copy = copy.deepcopy(self.test_results)
                 finished_for_flush = set(self._finished_channels)
                 self._finished_channels.clear()
             else:
+                test_copy = defaultdict(lambda: defaultdict(list))
+                for cate, name in pending:
+                    items = self.test_results.get(cate, {}).get(name, [])
+                    copied_items = [it.copy() if isinstance(it, dict) else it for it in items]
+                    if copied_items:
+                        test_copy[cate][name] = copied_items
+
                 finished_for_flush = set(self._finished_channels & pending)
                 self._finished_channels.difference_update(finished_for_flush)
 
@@ -289,7 +295,5 @@ class ResultAggregator:
             except asyncio.CancelledError:
                 pass
             self._debounce_task = None
-        if self.sort_logger:
-            self.sort_logger.handlers.clear()
         if self.stat_logger:
-            self.stat_logger.handlers.clear()
+            close_logger_handlers(self.stat_logger)
