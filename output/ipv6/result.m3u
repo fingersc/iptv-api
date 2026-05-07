@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-13.png" group-title="📺央视频道",CCTV-13
-http://pull-hls-f11.douyincdn.com/media/stream-695715623379403436.m3u8?expire=1778631127&sign=f7fbc45c8ffe10266d2c558cf1cceb3b&arch_hrchy=w1&exp_hrchy=w1&neq=1&major_anchor_level=common&t_id=037-202605060812061FE69CFD1A2912F11D3B-Pq7tSD
-#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-13.png" group-title="📺央视频道",CCTV-13
 http://pull-hls-f11.douyincdn.com/media/stream-695715623379403436.m3u8?expire=1778193009&sign=45fe2b90306250f83c8803f9a636a49d&arch_hrchy=w1&exp_hrchy=w1&neq=1&major_anchor_level=common&t_id=037-20260501063009D573D93A189AC1017167-huDcbM
+#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-13.png" group-title="📺央视频道",CCTV-13
+http://pull-hls-f11.douyincdn.com/media/stream-695715623379403436.m3u8?expire=1778631127&sign=f7fbc45c8ffe10266d2c558cf1cceb3b&arch_hrchy=w1&exp_hrchy=w1&neq=1&major_anchor_level=common&t_id=037-202605060812061FE69CFD1A2912F11D3B-Pq7tSD
 #EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-13.png" group-title="📺央视频道",CCTV-13
 https://t.freetv.fun/live/cctv13-21.m3u8
 #EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-14.png" group-title="📺央视频道",CCTV-14
@@ -18,15 +18,13 @@ https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480d
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/河北卫视.png" group-title="📡卫视频道",河北卫视
 http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/河南卫视.png" group-title="📡卫视频道",河南卫视
-https://t.freetv.fun/live/he-nan-wei-shi-13.php
+http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=ead970fc45478901de215444af378d99&wsTime=1778191069
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/河南卫视.png" group-title="📡卫视频道",河南卫视
-http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=189bc9716c9b2b9b08deb3d22e7720e4&wsTime=1778184000
+https://t.freetv.fun/live/he-nan-wei-shi-13.php
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/江苏卫视.png" group-title="📡卫视频道",江苏卫视
 https://t.freetv.fun/live/jiang-su-wei-shi-5.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/陕西卫视.png" group-title="📡卫视频道",陕西卫视
 https://t.freetv.fun/live/shan-xi-wei-shi-6.m3u8
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/四川卫视.png" group-title="📡卫视频道",四川卫视
-https://t.freetv.fun/live/si-chuan-wei-shi-1.m3u8
 #EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/深圳卫视.png" group-title="📡卫视频道",深圳卫视
 https://t.freetv.fun/live/shen-zhen-wei-shi-6.m3u8
 #EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/天津卫视.png" group-title="📡卫视频道",天津卫视
@@ -63,7 +61,7 @@ http://php.jdshipin.com:8880/smt.php?id=Celestial2
 http://r.jdshipin.com/LiYdg
 #EXTINF:-1 tvg-id="纬来体育" tvg-name="纬来体育" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/纬来体育.png" group-title="🏀体育频道",纬来体育
 https://stream1.freetv.fun/wei-lai-ti-yu-9.ctv
-#EXTINF:-1 tvg-id="蜡笔小新" tvg-name="蜡笔小新" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/蜡笔小新.png" group-title="🪁动画频道",蜡笔小新
-https://live.ottiptv.cc/bilibili/30837590
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-1.png" group-title="🕘️更新时间",2026-05-08 02:17:49
-http://pull-hls-f11.douyincdn.com/media/stream-695715623379403436.m3u8?expire=1778631127&sign=f7fbc45c8ffe10266d2c558cf1cceb3b&arch_hrchy=w1&exp_hrchy=w1&neq=1&major_anchor_level=common&t_id=037-202605060812061FE69CFD1A2912F11D3B-Pq7tSD
+#EXTINF:-1 tvg-id="七龙珠" tvg-name="七龙珠" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/七龙珠.png" group-title="🪁动画频道",七龙珠
+https://live.ottiptv.cc/huya/11601966
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://gh.xxooo.cf/https://raw.githubusercontent.com/wanglindl/TVlogo/refs/heads/main/img/CCTV-1.png" group-title="🕘️更新时间",2026-05-08 04:11:05
+http://pull-hls-f11.douyincdn.com/media/stream-695715623379403436.m3u8?expire=1778193009&sign=45fe2b90306250f83c8803f9a636a49d&arch_hrchy=w1&exp_hrchy=w1&neq=1&major_anchor_level=common&t_id=037-20260501063009D573D93A189AC1017167-huDcbM
