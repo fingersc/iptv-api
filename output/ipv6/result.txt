@@ -50,7 +50,6 @@ CCTV-8,http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv8hd/2000/index.m3u8?
 CCTV-9,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225929/index.m3u8
 CCTV-9,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225820/index.m3u8
 CCTV-9,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv9hd/51/index.m3u8?msisdn=d493a8cfccc5eecdb42ba52ab8d6c452&mdspid=&spid=699004&netType=0&sid=5501083624&pid=2028597139&timestamp=20260917235029&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168140&ParentNodeID=-99&assertID=5501083624&client_ip=39.103.182.111&SecurityKey=20260917235029&promotionId=&mvid=5102910384&mcid=500020&playurlVersion=ZQ-A1-9.9.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2cdd0972b5821532e7fcf4481a80e7a3&ddCalcu=32acv7daedd00a89a7128b4548f2c1f573e2&sv=10004&ct=android
-CCTV-9,https://xykt-fix.github.io/Y77.m3u8
 CCTV-10,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225931/index.m3u8
 CCTV-10,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225814/index.m3u8
 CCTV-10,http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226449/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EzhRgoBfyoaW0eC2lnTJYAQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNOxqyo6ss4VuHKCaIhF4e3B%2CEND
@@ -167,7 +166,8 @@ CETV-4,http://gslbmgsplive.miguvideo.com/migu/kailu/cetv4/51/20240709/index.m3u8
 河北卫视,http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
 河南卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227095/index.m3u8
 河南卫视,http://gslbmgsplive.miguvideo.com/wd-henanwssd-600/index.m3u8?msisdn=ab71adb9d918ac8606cfe1be5ccea287&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20260917235039&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=39.103.182.111&SecurityKey=20260917235039&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=ZQ-A1-9.9.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=56d99e7f6956e2820a30c9b3cb3e992f&ddCalcu=f526v9da99ae9a3eb7cf36b995c60e32a802&sv=10004&ct=android
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=bb345b463e94f1fe414ccbf2323e715f&wsTime=1789679034
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=fbaa5ae286d5040a555ffcba4f5c9e4c&wsTime=1789693414
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=b81e628cd4a97c5d82691fd13637a672&wsTime=1789675401
 吉林卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227099/index.m3u8
 吉林卫视,http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226533/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EicY_6znuOTlmMeE15TFEig%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNNUZpDp9cPVsM_M_ftJRVM%2CEND
 吉林卫视,http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/index.m3u8?msisdn=0d18af996020430c9f68602859092934&mdspid=&spid=600633&netType=0&sid=5910022164&pid=2028597139&timestamp=20260917235041&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472500&ParentNodeID=-99&assertID=5910022164&client_ip=39.103.188.159&SecurityKey=20260917235041&promotionId=&mvid=5900004357&mcid=500020&playurlVersion=ZQ-A1-9.9.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4e43f6449e0fc34c3001536e1447c660&ddCalcu=046ev64ac3z7fa464414e96e305f1c03043c&sv=10004&ct=android
@@ -278,4 +278,4 @@ CCTV-14,http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv14hd/2000/index.m3u
 炫动卡通,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227335/index.m3u8?servicetype=1
 
 🕘️更新时间,#genre#
-2026-09-18 02:21:59,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226908/index.m3u8
+2026-09-18 05:36:21,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226908/index.m3u8

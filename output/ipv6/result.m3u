@@ -101,8 +101,6 @@ http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225929/index.m3u8
 http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225820/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
 http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv9hd/51/index.m3u8?msisdn=d493a8cfccc5eecdb42ba52ab8d6c452&mdspid=&spid=699004&netType=0&sid=5501083624&pid=2028597139&timestamp=20260917235029&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168140&ParentNodeID=-99&assertID=5501083624&client_ip=39.103.182.111&SecurityKey=20260917235029&promotionId=&mvid=5102910384&mcid=500020&playurlVersion=ZQ-A1-9.9.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2cdd0972b5821532e7fcf4481a80e7a3&ddCalcu=32acv7daedd00a89a7128b4548f2c1f573e2&sv=10004&ct=android
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
-https://xykt-fix.github.io/Y77.m3u8
 #EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="📺央视频道",CCTV-10
 http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225931/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="📺央视频道",CCTV-10
@@ -332,7 +330,9 @@ http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227095/index.m3u8
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河南卫视.png" group-title="📡卫视频道",河南卫视
 http://gslbmgsplive.miguvideo.com/wd-henanwssd-600/index.m3u8?msisdn=ab71adb9d918ac8606cfe1be5ccea287&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20260917235039&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=39.103.182.111&SecurityKey=20260917235039&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=ZQ-A1-9.9.1-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=56d99e7f6956e2820a30c9b3cb3e992f&ddCalcu=f526v9da99ae9a3eb7cf36b995c60e32a802&sv=10004&ct=android
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河南卫视.png" group-title="📡卫视频道",河南卫视
-http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=bb345b463e94f1fe414ccbf2323e715f&wsTime=1789679034
+http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=fbaa5ae286d5040a555ffcba4f5c9e4c&wsTime=1789693414
+#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/河南卫视.png" group-title="📡卫视频道",河南卫视
+http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=b81e628cd4a97c5d82691fd13637a672&wsTime=1789675401
 #EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/吉林卫视.png" group-title="📡卫视频道",吉林卫视
 http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227099/index.m3u8
 #EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/吉林卫视.png" group-title="📡卫视频道",吉林卫视
@@ -537,5 +537,5 @@ http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227303/index.m3u8
 http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227335/index.m3u8
 #EXTINF:-1 tvg-id="哈哈炫动" tvg-name="炫动卡通" tvg-logo="https://www.xn--rgv465a.top/tvlogo/炫动卡通.png" group-title="🪁动画频道",炫动卡通
 http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227335/index.m3u8?servicetype=1
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-09-18 02:21:59
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-09-18 05:36:21
 http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226908/index.m3u8
