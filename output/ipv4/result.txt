@@ -1,52 +1,52 @@
 📺央视频道,#genre#
-CCTV-1,http://74.91.26.218:82/live/cctv1hd.m3u8
 CCTV-1,http://112.103.141.175:1234/608807420
-CCTV-2,http://192.151.150.154/live/cctv2hd.m3u8
 CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
+CCTV-2,http://192.151.150.154/live/cctv2hd.m3u8
 CCTV-2,http://112.103.141.175:1234/631780532
 CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-3,http://112.103.141.175:1234/624878271
-CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1792479600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-11ba40755b37a6f8efd0110a45b42f3e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+CCTV-4,http://207.56.13.146:81/cdnlive/cctv4.m3u8
 CCTV-4,http://112.103.141.175:1234/631780421
 CCTV-5,http://112.103.141.175:1234/641886683
 CCTV-5+,http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
 CCTV-5+,http://112.103.141.175:1234/641886773
-CCTV-5+,http://120.238.94.82:9901/tsfile/live/1030_1.m3u8
 CCTV-6,http://74.91.26.218:82/live/cctv6hd.m3u8
+CCTV-6,http://198.204.228.26/live/cctv6hd.m3u8
 CCTV-6,http://112.103.141.175:1234/624878396
-CCTV-7,http://112.103.141.175:1234/673168121
 CCTV-7,http://74.91.26.218:82/live/cctv7hd.m3u8
+CCTV-7,http://112.103.141.175:1234/673168121
+CCTV-8,http://74.91.26.218:82/live/cctv8hd.m3u8
 CCTV-8,http://112.103.141.175:1234/624878356
-CCTV-8,http://207.56.13.146:81/cdnlive/cctv8.m3u8
 CCTV-9,http://74.91.26.218:82/live/cctv9hd.m3u8
 CCTV-9,http://112.103.141.175:1234/673168140
-CCTV-10,http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
 CCTV-10,http://74.91.26.218:82/live/cctv10hd.m3u8
+CCTV-10,http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
 CCTV-10,http://112.103.141.175:1234/624878405
 CCTV-11,http://74.91.26.218:82/live/cctv11hd.m3u8
 CCTV-11,http://112.103.141.175:1234/667987558
 CCTV-12,http://74.91.26.218:82/live/cctv12hd.m3u8
+CCTV-12,http://112.103.141.175:1234/673168185
 CCTV-13,http://74.91.26.218:82/live/cctv13hd.m3u8
 CCTV-13,http://112.103.141.175:1234/608807423
 CCTV-14,http://74.91.26.218:82/live/cctv14hd.m3u8
 CCTV-14,http://112.103.141.175:1234/624878440
 CCTV-15,http://112.103.141.175:1234/673168223
-CCTV-16,http://113.57.140.161:10081/newlive/live/hls/17/live.m3u8
 CCTV-17,http://74.91.26.218:82/live/cctv17hd.m3u8
+CCTV-17,http://112.103.141.175:1234/673168256
 CETV-1,http://112.103.141.175:1234/923287154
 CETV-2,http://112.103.141.175:1234/923287211
 CETV-4,http://112.103.141.175:1234/923287339
 
 📡卫视频道,#genre#
+广东卫视,http://112.103.141.175:1234/608831231
+北京卫视,http://120.211.62.180:8000/hls/35/index.m3u8
 北京卫视,http://112.103.141.175:1234/630287636
 湖北卫视,http://112.103.141.175:1234/947472496
-东方卫视,http://112.103.141.175:1234/651632648
 贵州卫视,http://204.12.221.218:8181/3m1080p/gzws.m3u8
 河北卫视,http://112.103.141.175:1234/962042070
 河南卫视,https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=985ebb910dd1e9ad9603ffd7670bd155&wsTime=1791183481
 江苏卫视,http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009
 江苏卫视,http://112.103.141.175:1234/623899368
-江西卫视,http://112.103.141.175:1234/783847495
 辽宁卫视,http://112.103.141.175:1234/630291707
 内蒙古卫视,http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
 陕西卫视,http://112.103.141.175:1234/738910838
@@ -56,9 +56,8 @@ CHC家庭影院,http://192.151.150.154/live/chcjt.m3u8
 CHC家庭影院,http://198.204.228.26/live/chcjt.m3u8
 
 🏀体育频道,#genre#
-快乐垂钓,http://112.103.141.175:1234/961930263
 
 🪁动画频道,#genre#
 
 🕘️更新时间,#genre#
-2026-10-20 12:06:18,http://74.91.26.218:82/live/cctv1hd.m3u8
+2026-10-20 17:34:02,http://112.103.141.175:1234/608807420
