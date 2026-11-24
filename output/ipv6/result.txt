@@ -44,7 +44,6 @@ CCTV-8,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227449/ind
 CCTV-8,http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226451/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EO_1NY-UghfdG_S28Bf_FPw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO1anuaDcpMt0_BMig72trX%2CEND
 CCTV-9,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225929/index.m3u8
 CCTV-9,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225820/index.m3u8
-CCTV-9,https://xykt-fix.github.io/Y77.m3u8
 CCTV-10,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225931/index.m3u8
 CCTV-10,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225814/index.m3u8
 CCTV-10,http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226449/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EzhRgoBfyoaW0eC2lnTJYAQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNOxqyo6ss4VuHKCaIhF4e3B%2CEND
@@ -136,6 +135,7 @@ CETV-4,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227192/index.m3u8
 广西卫视,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227250/index.m3u8?servicetype=1
 广西卫视,http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226534/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EpjsBggKPaCw3f-xlBWZWaQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMJYhPE64lykNkIsypBRZqO%2CEND
 广西卫视,https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
+广西卫视,https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
 贵州卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227201/index.m3u8
 贵州卫视,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227201/index.m3u8?servicetype=1
 海南卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227216/index.m3u8
@@ -143,10 +143,9 @@ CETV-4,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227192/index.m3u8
 海南卫视,http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226574/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EZOP0PLu1-XG8_Ae0lTe9HQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNODcjESMU4f6yMuMuOuQbie%2CEND
 河北卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227063/index.m3u8
 河北卫视,http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
-河北卫视,https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1854721069&k=ca557faf4d869ca5959ee951a3da2817
 河南卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227095/index.m3u8
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=e5878a79445b3793c5d96d4d9cfb7ba6&wsTime=1795453452
-河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=e10fe4dae715dc1a2d738e6e2c5af385&wsTime=1795291402
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=46a61615269f1487251bf4127eb51706&wsTime=1795500199
+河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea2500000000_transios/playlist.m3u8?wsSecret=6c498915ad08966278d65488871efc64&wsTime=1795464201
 吉林卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227099/index.m3u8
 吉林卫视,http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226533/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EicY_6znuOTlmMeE15TFEig%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNNUZpDp9cPVsM_M_ftJRVM%2CEND
 江苏卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227160/index.m3u8
@@ -188,6 +187,7 @@ CETV-4,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227192/index.m3u8
 四川卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227182/index.m3u8
 四川卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225835/index.m3u8
 四川卫视,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227182/index.m3u8?servicetype=1
+四川卫视,http://x1x.bid:5146/rtp/239.3.1.29:8288
 深圳卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227242/index.m3u8
 深圳卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225848/index.m3u8
 深圳卫视,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221227489/index.m3u8
@@ -244,4 +244,4 @@ CCTV-14,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225819/index.m3u8
 炫动卡通,http://zterr.hvs.fj.chinamobile.com:6060/PLTV/88888888/224/3221227335/index.m3u8?servicetype=1
 
 🕘️更新时间,#genre#
-2026-11-23 22:36:13,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226908/index.m3u8
+2026-11-24 11:20:43,http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226908/index.m3u8
